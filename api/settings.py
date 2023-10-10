@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*sfmgaj)@i#dkma5)2p@nu7dtiid^a_%acxmw@(pm+a5ros84f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -66,6 +67,15 @@ TEMPLATES = [
         },
     },
 ]
+
+"""
+    Adicionando o controle sobre os objetos da página
+"""
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
+}
+
 
 WSGI_APPLICATION = 'api.wsgi.application'
 
