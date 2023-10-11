@@ -1,13 +1,15 @@
 from rest_framework import serializers
 
-from app.models import Post, Categoria
+from app.models import Skin
 
-class PostSerializer(serializers.ModelSerializer):
+class SkinSerializer(serializers.HyperlinkedModelSerializer):
+    """Serializer de skin"""
     class Meta:
-        model = Post
-        fields = '__all__'
-
-class CategoriaSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Categoria
-        fields = '__all__'
+        model = Skin
+        fields = ('arma',
+                  'nome',
+                  'preco',
+                  'float',
+                  'desgaste',
+                  'adesivado',
+                  'proprietario')
