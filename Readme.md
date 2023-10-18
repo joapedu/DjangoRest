@@ -6,6 +6,9 @@
 - Docker and docker compose (⌛⏳).
 - Clone and try make a QuerrySet or make your API!
 
+### Help
+- To contributing see [CONTRIBUTING.md](https://github.com/joapedu/DjangoRest/blob/develop/CONTRIBUTING.md)
+
 <h3 align="center"> 👾 <a href="https://github.com/joapedu"><strong>joapedu@</strong></a> <br />João Eduardo Braga</h3>
 <h4 align="center">:phone: <i>C O N T A T O S</i> :phone:</h4>
 <div align="center">
